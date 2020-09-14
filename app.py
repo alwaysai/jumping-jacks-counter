@@ -178,7 +178,7 @@ def main(cam=0, video_file=None, debug=False):
                     jj.update(results.poses[0])
                 else:
                     text.append('No poses found')
-                text.append("Count: {}".format(jj.count))
+                text.append("Jumping jacks: {}".format(jj.count))
 
                 streamer.send_data(frame, text)
 
