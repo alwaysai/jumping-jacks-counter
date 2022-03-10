@@ -144,7 +144,7 @@ def main(cam=0, video_file=None, debug=False):
 
         edgeiq.WebcamVideoStream.more = lambda x: True
 
-    pose_estimator = edgeiq.PoseEstimation("alwaysai/human-pose")
+    pose_estimator = edgeiq.PoseEstimation("alwaysai/human_pose")
 
     if edgeiq.is_jetson():
         pose_estimator.load(engine=edgeiq.Engine.TENSOR_RT)
